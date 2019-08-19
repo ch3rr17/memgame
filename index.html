@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+  <title>Smith and Nephew - Global Business Services</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Boostrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./styles/styles.css">
+
+</head>
+
+<body ng-controller="CardController as vm">
+ 
+
+ 
+  <div class="container">
+    <h1 class="text-center">Memory Game</h1>
+    <div class="panel panel-default">
+        <div class="panel-body">
+        <!-- Start of row --> 
+        <div class='row'>
+
+          <!-- Start of Game -->
+          <div class="col-xs-2" ng-repeat="card in vm.cards">
+            <div ng-click="vm.initialClick()" ng-show="card.cardIsFlipped"><img class="img-fluid" ng-src="images/{{card.value}}"></div>
+                          <div ng-click="vm.firstSelection(card)" ng-hide="card.cardIsFlipped"><img class="img-fluid" ng-src="images/minion.logo.png"></div>
+          </div>
+
+        </div><!-- end of row -->
+      </div><!-- end of panel body -->
+    </div><!-- end of panel container -->
+  </div><!-- end of main div container -->
+
+
+  <!-- AngularJS CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <!-- Bootstrap CDN -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <!-- Angular file -->
+  <!-- <script src="./app.js"></script> -->
+  <script src="app/app.js"></script>
+  <script src="app/card.controller.js"></script>
+</body>
+
+</html>

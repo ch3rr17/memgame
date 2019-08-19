@@ -1,0 +1,13 @@
+.panel-body{
+	background-color: #095573;
+}
+.col-xs-2{
+	padding: 10px;
+}
+img.img-fluid{
+	border: 1px solid #FCE94D;
+	border-radius: 4px;
+	width: 70px;
+	height: 100px;
+	
+}
