@@ -2,7 +2,7 @@
 <html lang="en" ng-app="app">
 
 <head>
-  <title>Smith and Nephew - Global Business Services</title>
+  <title>Minion Memory Game</title>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -31,7 +31,7 @@
           <!-- Start of Game -->
           <div class="col-xs-2" ng-repeat="card in vm.cards">
             <div ng-click="vm.initialClick()" ng-show="card.cardIsFlipped"><img class="img-fluid" ng-src="images/{{card.value}}"></div>
-                          <div ng-click="vm.firstSelection(card)" ng-hide="card.cardIsFlipped"><img class="img-fluid" ng-src="images/minion.logo.png"></div>
+            <div ng-click="vm.firstSelection(card)" ng-hide="card.cardIsFlipped"><img class="img-fluid" ng-src="images/minion.logo.png"></div>
           </div>
 
         </div><!-- end of row -->
