@@ -4,10 +4,11 @@
 .col-xs-2{
 	padding: 10px;
 }
-img.img-fluid{
+.img-fluid{
 	border: 1px solid #FCE94D;
 	border-radius: 4px;
-	width: 70px;
-	height: 100px;
+	width: 80%;
+  height: auto;
+  vertical-align: 1em;
 	
 }
